@@ -6,13 +6,16 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
           <Link to="/blog/">blog</Link>
         </li>
         <li>
           <Link to="/products/">prods</Link>
         </li>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/examples/">graphql examples</Link>
         </li>
       </ul>
     </nav>
