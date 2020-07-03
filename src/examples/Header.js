@@ -18,8 +18,12 @@ const Header = () => {
       }
     }
   `)
-  return <div>{data.site.siteMetadata.person.name}</div>
-  return <div>{data.site.siteMetadata.person.age}</div>
+  return (
+    <div>
+      <h2>{data.site.siteMetadata.person.name}</h2>
+      <h2>{data.site.siteMetadata.person.age}</h2>
+    </div>
+  )
 }
 
 export default Header
