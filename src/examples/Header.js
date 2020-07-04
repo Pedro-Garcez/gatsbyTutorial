@@ -18,11 +18,21 @@ const getData = graphql`
 `
 
 const Header = () => {
-  const data = useStaticQuery(getData)
-  console.log(data)
+  const {
+    site: {
+      siteMetadata: {
+        title,
+        person: { name },
+      },
+    },
+  } = useStaticQuery(getData)
+
   return (
     <div>
-      <h1>this is a heading</h1>
+      <h1>title: {/*data.site.siteMetadata.title*/}</h1>
+      <h1>name: {/*data.site.siteMetadata.person.name*/}</h1>
+      <h1>title: {title}</h1>
+      <h1>name: {name}</h1>
     </div>
   )
 }
