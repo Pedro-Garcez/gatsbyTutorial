@@ -1,0 +1,35 @@
+[33mcommit 70062f6edfba590d96e271564056db42619c799d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Pedro <pedropaulogarcez@gmail.com>
+Date:   Fri Jul 3 17:32:55 2020 -0400
+
+    Added layout component to examples page.
+
+[33mcommit 4e7edf6dafd11aef87da05fab894a03461a75576[m
+Author: Pedro <pedropaulogarcez@gmail.com>
+Date:   Fri Jul 3 17:26:15 2020 -0400
+
+    corrected syntax in header by adding parenthesis for return since I had more than one line.
+
+[33mcommit 286472908764d873e752a8dc70c1f58a8a8157cf[m
+Author: Pedro <pedropaulogarcez@gmail.com>
+Date:   Thu Jul 2 17:00:51 2020 -0400
+
+    added header component and examples page. Added name and age data using graphql.
+
+[33mcommit 66c99f90b4f3bd7bd242283e0fff5d0d807e9a2a[m
+Author: Pedro <pedropaulogarcez@gmail.com>
+Date:   Thu Jul 2 16:36:26 2020 -0400
+
+    added examples page and restructuring.
+
+[33mcommit 1b834edee9c2dd91d5b1ae6c704da5d6754df24e[m
+Author: Pedro <pedropaulogarcez@gmail.com>
+Date:   Thu Jul 2 16:27:24 2020 -0400
+
+    Learning gatsby. Added pages, brushed up on inline css in gatsby, modular css, and styled components. Learning graph ql and added data to gatsby config with sitemetadata. Learning how to access data with graphql.
+
+[33mcommit 8fe234facd98fb8023385d1ccaf1f4fbf868dc1d[m
+Author: Pedro <pedropaulogarcez@gmail.com>
+Date:   Fri Jun 26 21:02:53 2020 -0400
+
+    Initial commit from gatsby: (https://github.com/gatsbyjs/gatsby-starter-hello-world.git)
