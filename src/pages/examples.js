@@ -5,14 +5,19 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 
 const examples = ({ data }) => {
-  console.log(data)
+  const {
+    site: {
+      info: { author },
+    },
+  } = data
+
   return (
     <Layout>
       <h1>hello from examples page</h1>
       <Header />
       <HeaderStatic />
       <pre>{JSON.stringify(data, null, 4)}</pre>
-      <h5>{data.site.info.author}</h5>
+      <h5>author: {author}</h5>
     </Layout>
   )
 }
