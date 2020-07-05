@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
 import styles from "../components/products.module.css"
-console.log(styles)
 
 const products = () => {
   return (

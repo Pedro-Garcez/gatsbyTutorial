@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 const getData = graphql`
-  {
+  query firstQuery {
     site {
       info: siteMetadata {
         author
