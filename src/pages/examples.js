@@ -4,15 +4,15 @@ import HeaderStatic from "../examples/HeaderStatic"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 
-const examples = (props) => {
-  console.log(props)
+const examples = ({ data }) => {
+  console.log(data)
   return (
     <Layout>
       <h1>hello from examples page</h1>
       <Header />
       <HeaderStatic />
-      <pre>{JSON.stringify(props.data, null, 4)}</pre>
-      <h5>{props.data.site.info.author}</h5>
+      <pre>{JSON.stringify(data, null, 4)}</pre>
+      <h5>{data.site.info.author}</h5>
     </Layout>
   )
 }
