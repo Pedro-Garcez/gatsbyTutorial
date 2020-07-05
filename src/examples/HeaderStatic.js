@@ -20,7 +20,7 @@ const getData = graphql`
 const ComponentName = () => (
   <StaticQuery
     query={getData}
-    render={(data) => <pre>{JSON.stringify(data, null, 4)}</pre>}
+    render={(data) => <h4>{data.site.info.description}</h4>}
   ></StaticQuery>
 )
 
