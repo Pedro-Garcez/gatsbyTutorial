@@ -19,6 +19,13 @@ const getImages = graphql`
         }
       }
     }
+    example: file(relativePath: { eq: "desktop.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 100) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
   }
 `
 
@@ -41,6 +48,7 @@ const Images = () => {
         <div className="small">
           <Image fluid={data.fluid.childImageSharp.fluid} />
         </div>
+        <Image fluid={data.example.childImageSharp.fluid} />
       </article>
     </section>
   )
