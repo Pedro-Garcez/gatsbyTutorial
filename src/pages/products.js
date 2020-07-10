@@ -12,17 +12,23 @@ const Products = ({ data }) => {
   } = data
   return (
     <Layout>
-      <section>
-        <h1>Products page dog</h1>
+      <h1>Products page dog</h1>
+      <section className={styles.products_flex}>
         {products.map((product) => {
           /* destructure each item in the array (product) and get the title,
           price and id properties and assign it to the variables title and price respectively*/
-          const { title, price, id } = product
+          const { title, price, id, image, slug } = product
           return (
-            <article key={id}>
-              {console.log(id)}
-              <h3>{title}</h3>
-              <p>{price}</p>
+            <article key={id} className={styles.products_flex_item}>
+              <Link to={slug}>
+                <Image
+                  fluid={image.fluid}
+                  alt={title}
+                  className={styles.products_img}
+                />
+              </Link>
+              <h2>{title}</h2>
+              <h3>${price}</h3>
             </article>
           )
         })}
