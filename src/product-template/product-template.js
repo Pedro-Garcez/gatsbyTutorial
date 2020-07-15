@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import styles from "../components/product.module.css"
 import Image from "gatsby-image"
 
-const product = ({ data }) => {
+const productTemplate = ({ data }) => {
   const {
     allContentfulProduct: { nodes: products },
   } = data
@@ -12,7 +12,7 @@ const product = ({ data }) => {
   console.log(products)
   return (
     <Layout>
-      <h1></h1>
+      <h1>This is a product template.</h1>
     </Layout>
   )
 }
@@ -35,4 +35,4 @@ export const query = graphql`
   }
 `
 
-export default product
+export default productTemplate
