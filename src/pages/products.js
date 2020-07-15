@@ -20,7 +20,7 @@ const Products = ({ data }) => {
           const { title, price, id, image, slug } = product
           return (
             <article key={id} className={styles.products_grid_item}>
-              <Link to={slug}>
+              <Link to={`/products/${slug}`}>
                 <Image
                   fluid={image.fluid}
                   alt={title}

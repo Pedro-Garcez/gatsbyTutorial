@@ -1,3 +1,5 @@
+const path = require("path")
+
 /* Create pages dynamically*/
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -11,5 +13,11 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  result.data.products.nodes.forEach()
+  result.data.products.nodes.forEach((product) => {
+    createPage({
+      path: `/products/${product.slug}`,
+      component: path.resolve(`src/templates/product-template.js`),
+      context: { slug: product.slug },
+    })
+  })
 }
