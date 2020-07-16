@@ -7,7 +7,9 @@ import Image from "gatsby-image"
 const productTemplate = ({
   data: {
     product: {
+      price,
       title,
+      info: { info },
       image: { fixed },
     },
   },
@@ -18,9 +20,14 @@ const productTemplate = ({
         <div className={styles.stylesTemplate_header}>
           <Link to="/products">back to products</Link>
           <h1>{title}</h1>
+          <h3>${price}</h3>
         </div>
-        <div className={styles.stylesTemplate_content}>
+        <div className={styles.stylesTemplate_contentImage}>
           <Image fixed={fixed}></Image>
+        </div>
+        <div className={styles.stylesTemplate_contentInfo}>
+          <p>{info}</p>
+          <button>Add to cart</button>
         </div>
       </div>
     </Layout>

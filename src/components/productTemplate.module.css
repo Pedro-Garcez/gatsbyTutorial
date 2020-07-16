@@ -1,4 +1,31 @@
 .stylesTemplate_grid {
   display: grid;
+  grid-template-areas: "header" "contentImage" "contentInfo";
   grid-template-columns: 1fr;
+}
+
+.stylesTemplate_header {
+  grid-area: header;
+  justify-self: center;
+  text-align: center;
+}
+
+.stylesTemplate_content {
+}
+
+.stylesTemplate_contentInfo {
+  grid-area: contentInfo;
+}
+
+.stylesTemplate_contentImage {
+  grid-area: contentImage;
+  justify-self: center;
+  margin: 0 2rem 0 0;
+}
+
+@media screen and (min-width: 992px) {
+  .stylesTemplate_grid {
+    grid-template-areas: "header header" "contentImage contentInfo";
+    grid-template-columns: auto 1fr;
+  }
 }
